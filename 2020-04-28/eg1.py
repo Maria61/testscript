@@ -4,6 +4,8 @@ import time
 driver = webdriver.Chrome()
 driver.get("https://www.baidu.com")
 
+# 练习定位元素
+
 # 通过id定位元素
 # driver.find_element_by_id("kw").send_keys("大虞海棠")
 # 通过class定位元素
