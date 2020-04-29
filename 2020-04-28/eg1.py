@@ -25,5 +25,6 @@ driver.get("https://www.baidu.com")
 # 通过css定位元素
 driver.find_element_by_css_selector("#kw").send_keys("Lisa")
 driver.find_element_by_css_selector("#su").click()
+
 time.sleep(8)
 driver.quit()
