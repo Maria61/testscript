@@ -22,5 +22,3 @@ ActionChains(driver).move_to_element(list[0]).perform()
 time.sleep(4)
 driver.quit()
 
-
-
