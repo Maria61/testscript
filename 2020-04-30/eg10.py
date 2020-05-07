@@ -13,6 +13,7 @@ time.sleep(6)
 # 先定位到触发下拉框选项的元素并点击
 driver.find_element_by_link_text("Link1").click()
 time.sleep(10)
+# WebDriverWait(dr,10).until(lambda)
 # 先定位到ul，然后定位到具体的要点击的li元素
 list = driver.find_element_by_id("dropdown1").find_elements_by_link_text("Action")
 driver.implicitly_wait(10)
