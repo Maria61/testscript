@@ -13,9 +13,9 @@ time.sleep(6)
 # 先定位到触发下拉框选项的元素并点击
 driver.find_element_by_link_text("Link1").click()
 time.sleep(10)
-# WebDriverWait(dr,10).until(lambda)
+# WebDriverWait(dr,10).until(lambda the_driver:the_driver.find_element_by_id('dropdown1').is_display()) #每隔500ms扫描一次的等待
 # 先定位到ul，然后定位到具体的要点击的li元素
-list = driver.find_element_by_id("dropdown1").find_elements_by_link_text("Action")
+list = driver.find_element_by_id("dropdown1").find_elements_by_link_text("Action") # Action只有一个，这里的list是？
 driver.implicitly_wait(10)
 # 通过动作事件中的 move... 移动鼠标，perform选中元素
 ActionChains(driver).move_to_element(list[0]).perform()
