@@ -4,7 +4,7 @@ import os
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-# 层级定位
+# 层级定位：点击按钮后，出现多个按钮可以选择，点击并进行相应的跳转或弹出处理
 
 driver = webdriver.Chrome()
 file_path = 'file:///' + os.path.abspath('level_locate.html')
