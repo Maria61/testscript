@@ -53,6 +53,9 @@ from my_function import person3
 # person3('xxx',28,city='NanJing',job='w')
 
 
-a=(1,2,3)
-b={'c':4,'d':5}
-person2(*a,**b)
+
+args=(1,2,3)
+kw={'city':4,'job':5}
+person2(*args,**kw)
+# kw1={'c':4,'d':5}
+# person1(*args,**kw1)
