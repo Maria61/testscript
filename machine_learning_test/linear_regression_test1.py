@@ -17,7 +17,7 @@ points = np.genfromtxt('data.csv',delimiter=',')#points可以看作多行两列�
 # 1.取矩阵中的两列数据
 x = points[:,0]#矩阵的第一列数据
 y = points[:,1]#矩阵的第二列数据
-plt.scatter(x,y)
+plt.scatter(x,y) #描点
 # plt.show()
 
 # 2.定义损失函数
@@ -67,6 +67,6 @@ print("cost = ",cost)
 
 # 5.画出拟合曲线
 pred_y = w*x + b #对于每个x的理想值
-plt.plot(x,pred_y,c='r')
+plt.plot(x,pred_y,c='r') #plot画线
 plt.show()
 
